@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Limbajul C++</title>
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            Limbajul C++
+            <i class="fa-duotone fa-circle-c logo"></i>
+
+        </a>
+        <i id="menu-btn"class="fas fa-bars" onclick="show()"></i>
+
+    </header>
+    <div class="page-container">
+        <aside id="side-menu">
+            <a href="../index.html">Acasă</a>
+            <a href="tipuri de date.html">Tipuri de date</a>
+            <a href="caracteristici.html">Caracteristici</a>
+
+        </aside>
+        <main>
+            <h2 class="title">Tipuri de date</h2>
+            <div class="row row-type">
+                <div class="col-50">
+                    <div class="type">
+                        <h4 align="center">Tipul de date standard</h4>
+                        <p>
+                            Prin date înţelegem, în general, tot ceea ce este prelucrat de un calculator.
+                            Fiecare dată are un anumit tip.
+                            Un tip de date defineşte mulţimea valorilor pe care le pot lua datele de tipul
+                            respectiv, modul de reprezentare a acestora în memorie, precum şi operaţiile
+                            care se pot efectua cu datele respective.
+                            Orice limbaj de programare dispune de un set de tipuri de date predefinite,
+                            denumite şi tipuri de date standard.
+                            Mulţimea valorilor unui anumit tip de date reprezintă constantele tipului
+                            respectiv.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-50">
+                    <div class="type">
+                        <h4 align="center">Tipul de date integer</h4>
+                        <p>
+                            Valorile datelor de tip int sunt numere întregi, cuprinse în intervalul [-32 768, 32
+                            767], reprezentate în memorie pe 2 octeţi (bytes), în cod complementar. Tipul de
+                            date int suportă modificatorii de tip unsigned (datele sunt numere naturale) şi long
+                            (modifică dimensiunea reprezentării).
+                            Atunci când un tip de date nu este precizat, implicit este considerat int. Prin
+                            urmare, putem specifica numai modificatorul long, sau unsigned, sau unsigned long,
+                            tipul fiind implicit int.
+                            Constantele întregi sunt numere întregi din intervalul corespunzător tipului. Ele
+                            pot fi precizate în baza 10 (folosind notaţia uzuală), în baza 8 (în acest caz,
+                            constanta este precedată de un 0 nesemnificativ) sau în baza 16 (caz în care
+                            constanta are prefixul 0xsau 0X)
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-type">
+                <div class="col-50">
+                    <div class="type">
+                        <h4 align="center">Tipul de date char</h4>
+                        <p>
+                            Tipul char este, de asemenea, un tip întreg, care se reprezintă pe un octet, cu
+                            semn.
+                            Constantele de tip char (unsigned char) pot fi numere întregi din intervalul
+                            specificat sau caracterele care au codurile ASCII în intervalul specificat. Valorile
+                            de tip char par a avea o natură duală - caractere ASCII şi numere întregi. Pentru
+                            calculator nu este însă nimic ambiguu, deoarece el reţine orice caracter cu ajutorul
+                            valorii numerice asociate (codul său ASCII). De exemplu, caracterul 'A' şi constanta
+                            65 au pentru calculator aceeaşi semnificaţie.
+                            Caracterele grafice (coduri ASCII de la 32 la 127) se pot specifica încadrând
+                            caracterul respectiv între apostrofuri. De exemplu, 'a', '9', ' ', '*'.
+                            Caracterele negrafice (dar şi cele grafice, dacă dorim) se pot specifica
+                            încadrând între apostrofuri o secvenţă de evitare (secvenţă escape). Secvenţele
+                            escape sunt formate din caracterul
+                            \ (backslash), urmat de codul ASCII al caracterului (exprimat în baza 8 sau
+                            exprimat în baza 16,precedat de x).
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-50">
+                    <div class="type">
+                        <h4 align="center">Tipul de date reale</h4>
+                        <p>
+                            Tipurile reale ale limbajului C/C++ sunt float şi double. Tipul double acceptă şi
+                            modificatorul long.
+                            Constantele reale care se pot reprezenta în memoria calculatorului sunt
+                            numere raţionale din intervalele specificate. Constantele reale pot fi specificate în
+                            notaţia uzuală sau în format exponenţial (ştiinţific). În forma uzuală se precizează
+                            partea întreagă şi partea zecimală a numărului, separate prin marca zecimală din
+                            sistemul englezesc (caracterul punct). În format exponenţial se poate preciza, în
+                            plus, şi un exponent al lui 10, precedat de litera e sau E. Valoarea numărului se
+                            obţine înmulţind numărul cu 10 la puterea specificată.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+
+
+    </div>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

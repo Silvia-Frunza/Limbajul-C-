@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Limbajul C++</title>
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            Limbajul C++
+            <i class="fa-duotone fa-circle-c logo"></i>
+
+        </a>
+        <i id="menu-btn"class="fas fa-bars" onclick="show()"></i>
+
+    </header>
+    <div class="page-container">
+        <aside id="side-menu">
+            <a href="../index.html">Acasă</a>
+            <a href="tipuri de date.html">Tipuri de date</a>
+            <a href="caracteristici.html">Caracteristici</a>
+
+        </aside>
+        <main>
+            <h2 class="title">Caracteristici</h2>
+            <p>
+                Cu C++ poți crea tot felul de lucruri uimitoare, precum jocuri video AAA, aplicații puternice pentru
+                desktop puternice și aplicații mobile. Fiind un limbaj de programare low-level, C++ este mai greu de
+                înțeles, dar îți oferă mai mult control asupra hardware-ului. Unii spun chiar că limbajul C++ te ajută
+                „să fii mai aproape de metal”. De aceea este alegerea perfectă pentru dezvoltarea jocurilor video pentru
+                console. Poți folosi C++ și în programarea sistemelor, sisteme încorporate și dezvoltare web back-end.
+                C++ este grozav pentru crearea și optimizarea sistemelor de operare și a driverelor pentru
+                dispozitivelor.
+            </p>
+            <h2 align="center" class="title">Variabile</h2>
+            <p>
+                O variabilă este o dată care îşi poate modifica valoarea pe parcursul execuţiei programului. În limbajul
+                C/C++, înainte de a utiliza o variabilă, trebuie să o declarăm. La declarare, trebuie să specificăm
+                numele variabilei, tipul acesteia şi, eventual, o valoare iniţială pe care dorim să o atribuim
+                variabilei. Formatul general al unei declaraţii de variabile este:
+                </BR>
+                <BR>
+                <mark>tip nume_var1[=expresie1] [, nume_var2[=expresie2]...];</mark>
+                </BR>
+                <BR>
+                • Prin <mark>tip</mark> specificăm tipul variabilelor care se declară.
+                <BR>
+                • Prin <mark>nume_var1, nume_var2, ...</mark> specificăm numele variabilelor care se declară (acestea
+                sunt
+                identificatori).
+                <BR>
+                • Se pot declara simultan mai multe variabile de acelaşi tip, separând numele lor prin virgulă.
+                <BR>
+                • La declarare, putem atribui variabilei o valoare iniţială, specificând după numele variabilei
+                caracterul <mark>'='</mark> şi o expresie de iniţializare. Expresia trebuie să fie evaluabilă în
+                momentul declarării.
+                <BR>
+                • Parantezele <mark>"[]"</mark> în descrierea formatului general au semnificaţia că elementul încadrat
+                între
+                paranteze este opţional (poate să apară sau nu într-o declaraţie de variabile).
+                </BR>
+                <BR>
+                Declaraţia unei variabile trebuie să preceadă orice referire la variabila respectivă şi poate fi plasată
+                în interiorul unei funcţii (în cazul nostru, al funcţiei <b>main ()</b>) sau în exteriorul oricărei
+                funcţii (în
+                cazul nostru, în exteriorul funcţiei <b>main()</b>). Dacă declaraţia este plasată în interiorul unei
+                funcţii,
+                variabila se numeşte locală funcţiei, altfel se numeşte globală.
+                </BR>
+                <BR>
+                Există diferenţe majore între variabilele locale şi cele globale, pe care le vom studia amănunţit
+                ulterior, când vom şti să proiectăm propriile noastre funcţii. La nivel de iniţiere este util să ştim că
+                variabilele globale sunt automat iniţializate cu 0. Cele locale nu sunt iniţializate.
+                <BR>
+                Referitor la poziţia declaraţiilor de variabile în cadrul unei funcţii, există diferenţe între limbajul
+                C şi limbajul C++. în limbajul C++ putem plasa declaraţii de variabile oriunde în corpul unei funcţii.
+                în limbajul C, declaraţiile de variabile trebuie să fie plasate la începutul corpului funcţiei, înaintea
+                oricărei instrucţiuni.
+            </p>
+            <h2 align="center" class="title">Instrucţiuni</h2>
+            <p>
+                Algoritmul proiectat pentru rezolvarea unei anumite probleme trebuie implementat într-un limbaj de
+                programare. Prelucrarea datelor se realizează cu ajutorul <b>instrucţiunilor</b>. Instrucţiunea descrie
+                un
+                proces de prelucrare pe care un calculator îl poate executa. O instrucţiune este o construcţie validă
+                (care respectă sintaxa limbajului) urmată de <b><mark>;</mark></b> . Ordinea în care se execută
+                instrucţiunile unui program
+                defineşte aşa-numita <b> structură de control</b> a programului.
+                <BR>
+                <b> Instrucţiunea vidă</b> - nu are nici un efect. Se utilizează în construcţii în care se cere prezenţa
+                unei
+                instrucţiuni, dar nu se execută nimic (de obicei, în instrucţiunile repetitive).
+                <BR>
+                <b>Instrucţiunea bloc</b> - este utilizată în locurile în care este necesară prezenţa unei singure
+                instrucţiuni, însă procesul de calcul este mai complex, deci trebuie descris în mai multe secvenţe.
+                <BR>
+                <b>Instrucţiunea if</b>- testează valoarea numerică a expresiei (condiţiei), este posibilă prescurtarea:
+                if (expresie), în loc de if (expresie != 0).
+                Deoarece ramura else a instrucţiunii if este opţională, în cazul în care aceasta este omisă din
+                secvenţele if-else imbricate, se produce o ambiguitate. De obicei, ramura else se asociază ultimei
+                instrucţiuni if.
+
+            </p>
+        </main>
+    </div>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
